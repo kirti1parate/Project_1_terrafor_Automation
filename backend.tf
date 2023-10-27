@@ -7,13 +7,6 @@ terraform {
     dynamodb_table = "terraform_state_lock"
   }
 
-backend "dynamodb" {
-
-    name = "terraform_state_lock"
-    hash_key = "LockM"
-    
-  }
-
 }
 
 
