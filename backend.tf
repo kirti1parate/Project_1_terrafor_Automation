@@ -3,6 +3,6 @@ terraform {
     bucket = "practicalpractical"
     key = "main"
     region = "us-east-1"
-    dynamodb_table = "my-dynamodb-table"
+    dynamodb_table = "terraform-state-lock"
   }
 }
