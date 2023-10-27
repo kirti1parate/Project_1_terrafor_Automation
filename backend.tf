@@ -9,8 +9,8 @@ terraform {
 
 backend "dynamodb" {
 
-    name= "terraform_state_lock"
-    hash_key= "LockM"
+    name = "terraform_state_lock"
+    hash_key = "LockM"
     
   }
 
