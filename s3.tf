@@ -4,7 +4,7 @@ resource "aws_s3_bucket" "my-s3-bucket" {
   tags = var.tags
 }
 
-resource "aws_s3_bucket_acl" "example" {
+resource "aws_s3_bucket_acl" "my-s3-bucket" {
   bucket = aws_s3_bucket.my-s3-bucket.id
   acl    = var.acl
 }
