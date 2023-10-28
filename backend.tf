@@ -1,8 +1,14 @@
 terraform {
   backend "s3" {
-    bucket = "mydev-tf-state-bucket-project-terraform-batch-20"
+    bucket = "practicalpractical"
     key = "main"
     region = "us-east-1"
+    encrypt = true
     dynamodb_table = "my-dynamodb-table"
   }
+
 }
+
+
+
+
