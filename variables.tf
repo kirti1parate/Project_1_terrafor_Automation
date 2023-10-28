@@ -5,7 +5,7 @@ variable "aws_region" {
 
 variable "key_name" { 
     description = " SSH keys to connect to ec2 instance" 
-    default     =  "/var/lib/jenkins/workspace/Kirtikeypair.pem" 
+    default     =  "/var/lib/jenkins/workspace/Kirtikeypair" 
 }
 
 variable "instance_type" { 
