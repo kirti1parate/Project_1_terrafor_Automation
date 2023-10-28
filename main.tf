@@ -54,7 +54,7 @@ resource "aws_instance" "myFirstInstance" {
 
 # Create Elastic IP address
 resource "aws_eip" "myFirstInstance" {
-  vpc      = true
+  id = aws_security_group.jenkins-sg-2022
   instance = aws_instance.myFirstInstance.id
 tags= {
     Name = "my_elastic_ip"
